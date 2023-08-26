@@ -2,7 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .sidebar-left {
-    position: sticky;
+    position: static;
     top: 105px;
     bottom: 0;
     left: 2;
@@ -16,7 +16,7 @@
     }
 
 .sidebar-right {
-    position: sticky;
+    position: static;
     top: 105px;
     bottom: 0;
     right: 0;
@@ -28,7 +28,6 @@
     background-color: #f5f5f5;
     border-left: 1px solid #eee;
     }
-
 
 
 .glow-text {
