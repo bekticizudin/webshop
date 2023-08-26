@@ -28,7 +28,11 @@
     background-color: #f5f5f5;
     border-left: 1px solid #eee;
     }
-
+    
+    .nav-sidebar {
+        display: block;
+        text-align: center;
+    }
 
 .glow-text {
     color: #fff;
