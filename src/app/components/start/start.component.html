@@ -1,6 +1,10 @@
 <!-- Header -->
+
   <header class="p-1 border-bottom">
-    <div class="container">
+    <div id="logo">
+      <img src= "..//src/assets/logo1.png">
+      </div>
+      <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
@@ -117,7 +121,42 @@
           <hr class="featurette-divider">
         </div>
       </div>
+      <div class="container">
+
+        <!-- Contact Us Form -->
+      <section>
+      <h3 class="text-center">Contact us</h3><br />
+      
+      <div class="row">
+        <div class="col-md-8">
+            <form id="contact-form" onsubmit="return validateForm()">
+              <input id="name" class="form-control" name="name" placeholder="Name..." required/><br />
+              <input id="surname" class="form-control" name="surname" placeholder="Surname..." required/><br />
+              <input id="phone" class="form-control" name="phone" placeholder="Phone..." required/><br />
+              <input id="email" class="form-control" name="email" placeholder="E-mail..." required/><br />
+              <textarea id="text" class="form-control" name="text" placeholder="How can we help you?" style="height:150px;" required></textarea><br />
+              <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
+            </form>
+        </div>
+        <div class="col-md-4">
+          <b>Customer service:</b> <br />
+          Phone: +1 129 209 291<br />
+          E-mail: <a href="mailto:support@techshop.com">support@techshop.com</a><br />
+          <br /><br />
+          <b>Headquarter:</b><br />
+          Tech Shop Inc, <br />
+          Las Vegas street 201<br />
+          55001 Nevada, USA<br />
+          Phone: +1 145 000 101<br />
+          <a href="mailto:ts@techshop.com">ts@techshop.com</a><br />
+      
+      
+        </div>
+      </div>
+    </section>
+      </div>
     
+
     </main>
 
     <!-- Right Sidebar -->
@@ -133,3 +172,6 @@
     </ul></div>
     </nav>
   </div>
+<footer>Dizajnirao: Izudin Bektić
+  2023. godina
+</footer>
