@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './components/products/products.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { StartComponent } from './components/start/start.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 const routes: Routes = [
   { 
@@ -18,6 +19,10 @@ const routes: Routes = [
     path: 'contact', 
     component: ContactComponent,
     },
+    { 
+      path: 'contact-form', 
+      component: ContactFormComponent,
+      },
 ];
 
 @NgModule({

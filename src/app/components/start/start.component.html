@@ -1,29 +1,9 @@
 <!-- Header -->
 
-  <header class="p-1 border-bottom">
-    <div id="logo">
-      <a href=""> <img src= "..//src/assets/logo1.png"></a> 
-      </div>
-      <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="https://facebook.com" class="nav-link px-2 link-dark">Facebook</a></li>
-          <li><a href="https://instagram.com" class="nav-link px-2 link-dark">Instagram</a></li>
-          <li><a href="https://twitter.com" class="nav-link px-2 link-dark">Twitter</a></li>
-          <li><a href="https://youtube.com" class="nav-link px-2 link-dark">YouTube</a></li>
-        </ul>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-        </div>
-      </div>
-  </header>
+  <app-header></app-header>
 
 <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Tenth navbar example">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" 
       aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,96 +47,30 @@
 <!-- Start of Main -->
     <main class="col-md-7 main">
       <div>
-  
 <hr class="featurette-divider">
-  
-<div class="container marketing">
-  <div class="row">
-    <div class="col-lg-4">
-      <img class="rounded" src="..//src/assets/50.jpg" alt="Tablets" width="140" height="140">
-      <h3>Summer Sale: 50% OFF on everything!</h3>
-      <p>🛍️Get a stunning 50% discount on everything in-store and online! It's your chance to snag incredible deals and make this summer unforgettable.🛍️</p>
-      <p><a class="btn btn-secondary" href="/products" role="button">View details »</a></p>
-    </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="rounded" src="..//src/assets/free_shipping.jpg" alt="Laptops" width="145" height="145">
-      <h3>Free Shipping Coupon</h3>
-      <p>🛍️ Enjoy a free shipping coupon on your next purchase! Experience the joy of shopping without worrying about shipping costs. Your favorite items, delivered right to your doorstep. 🛍️.</p>
-      <p><a class="btn btn-secondary" href="/products" role="button">View details »</a></p>
-    </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="rounded" src="..//src/assets/apple-iphone-smartphone-desk.jpg" alt="Iphones" width="140" height="140">
-      <h3>New Products</h3>
-      <p> 🛍️ We're thrilled to present our latest creations! Introducing new products that fuse technology, design, and functionality like never before. Your gateway to a world of innovation 🛍️</p>
-      <p><a class="btn btn-secondary" href="/products" role="button">View details »</a></p>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-</div>
-        <div class="container marketing">
-          <div class="row">
-            <div class="col-lg-4">
-              <img class="rounded" src="..//src/assets/laptop.jpg" alt="Laptops" width="145" height="145">
-              <h3>Laptops</h3>
-              <p>🛍️ Discover our newest laptop arrivals, designed to empower your productivity and entertainment. Experience performance and style in one sleek package. 🛍️.</p>
-              <p><a class="btn btn-secondary" href="/products" role="button">View details »</a></p>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img class="rounded" src="..//src/assets/tablet4.png" alt="Tablets" width="140" height="140">
-              <h3>Tablets</h3>
-              <p>🛍️Dive into the realm of possibilities with our latest tablets. From immersive entertainment to seamless work, these devices are your gateway to limitless potential.🛍️</p>
-              <p><a class="btn btn-secondary" href="/products" role="button">View details »</a></p>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img class="rounded" src="..//src/assets/iphones.jpg" alt="Iphones" width="140" height="140">
-              <h2>Iphones</h2>
-              <p>🛍️Introducing the latest iPhones that redefine communication and convenience. Explore cutting-edge features and stay ahead with the ultimate mobile experience.🛍️</p>
-              <p><a class="btn btn-secondary" href="/products" role="button">View details »</a></p>
-            </div>
-          </div>
-          <hr class="featurette-divider">
+          
         </div>
-      </div>
       <div class="container">
 
-        <!-- Contact Us Form -->
-      <section>
-      <h3 class="text-center">Contact us</h3><br />
-      
-      <div class="row">
-        <div class="col-md-8">
-            <form id="contact-form" onsubmit="return validateForm()">
-              <input id="name" class="form-control" name="name" placeholder="Name..." required/><br />
-              <input id="surname" class="form-control" name="surname" placeholder="Surname..." required/><br />
-              <input id="phone" class="form-control" name="phone" placeholder="Phone..." required/><br />
-              <input id="email" class="form-control" name="email" placeholder="E-mail..." required/><br />
-              <textarea id="text" class="form-control" name="text" placeholder="How can we help you?" style="height:150px;" required></textarea><br />
-              <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
-            </form>
+        <div class="central-section">
+          <div class="section">
+            <img src="popusti.jpg" alt="Popusti i kuponi">
+            <h2 class="section-title">Popusti i kuponi</h2>
+            <p class="section-description">Pregled aktuelnih popusta i dostupnih kupona za naše klijente.</p>
+          </div>
+          <div class="section">
+            <img src="novi-proizvodi.jpg" alt="Najava novih proizvoda">
+            <h2 class="section-title">Najava novih proizvoda</h2>
+            <p class="section-description">Budite prvi informisani o najnovijim proizvodima koji će se uskoro pojaviti u ponudi.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <b>Customer service:</b> <br />
-          Phone: +1 129 209 291<br />
-          E-mail: <a href="mailto:support@techshop.com">support@techshop.com</a><br />
-          <br /><br />
-          <b>Headquarter:</b><br />
-          Tech Shop Inc, <br />
-          Las Vegas street 201<br />
-          55001 Nevada, USA<br />
-          Phone: +1 145 000 101<br />
-          <a href="mailto:ts@techshop.com">ts@techshop.com</a><br />
-      
-      
-        </div>
-      </div>
-    </section>
-      </div>
-    
 
+        <!-- Contact Us Form -->
+<section>
+        <app-contact-form></app-contact-form>
+        </section>
+
+      </div>
     </main>
 
     <!-- Right Sidebar -->

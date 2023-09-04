@@ -1,0 +1,24 @@
+<!-- contact-form.component.html -->
+<h2 class="text-center">Kontaktirajte nas:</h2>
+<form class="card p-3 bg-light" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+  <label for="firstName">Ime:</label>
+  <input type="text" id="firstName" formControlName="firstName">
+  
+  <label for="lastName">Prezime:</label>
+  <input type="text" id="lastName" formControlName="lastName">
+  
+  <label for="phone">Telefon:</label>
+  <input type="text" id="phone" formControlName="phone">
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" formControlName="email">
+  
+  <label for="message">Poruka:</label>
+  <textarea id="message" formControlName="message"></textarea>
+  
+  <button type="submit">Pošalji</button>
+</form>
+<div *ngIf="contactForm.invalid && isFormSubmitted" class="error-message">Niste ispravno popunili sva polja.</div>
+<div *ngIf="!contactForm.invalid && isFormSubmitted" class="success-message">
+  Poruka je uspješno poslana!
+</div>
