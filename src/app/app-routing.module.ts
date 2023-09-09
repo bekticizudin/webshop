@@ -22,7 +22,7 @@ const routes: Routes = [
     { 
       path: 'contact-form', 
       component: ContactFormComponent,
-      },
+      }
 ];
 
 @NgModule({

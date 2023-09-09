@@ -16,7 +16,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     StartComponent,
     routingComponents,
     HeaderComponent,
-    ContactFormComponent
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,

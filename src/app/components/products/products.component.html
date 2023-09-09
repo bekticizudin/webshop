@@ -10,27 +10,43 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Naslovna</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/products">Products</a>
+            <a class="nav-link active" href="/products">Proizvodi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link" href="/contact">Kontakt</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="product-container">
-    <div class="product-item" *ngFor="let product of products">
-      <div class="product-image">
-        <img src="{{ product.imageUrl }}" alt="{{ product.name }}">
-      </div>
-      <div class="product-details">
-        <h3>{{ product.name }}</h3>
-        <p>Cijena: {{ product.price }}</p>
-        <p>{{ product.description }}</p>
+  
+  <div class="container">
+    <h2>Proizvodi</h2>
+    <div class="card-columns">
+      <div class="card" *ngFor="let product of products">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]="product.imagePath" class="card-img-top small-image" alt="{{ product.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">{{ product.description }}</p>
+              <div class="old-price" [ngStyle]="{'text-decoration': product.discountPercent > 0 ? 'line-through' : 'none'}">
+                Cijena: {{ product.price }} KM
+              </div>
+              <div class="new-price" *ngIf="product.discountPercent > 0">Nova cijena: {{ product.discountedPrice }} KM</div>
+            
+            <div class="discount" *ngIf="product.discountPercent > 0">
+              Popust: <span [ngStyle]="{'color': 'green'}">{{ product.discountPercent }}%</span>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  
