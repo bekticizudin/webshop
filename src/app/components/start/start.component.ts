@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { StartService } from '../service/start.service';
+import { HttpClient } from '@angular/common/http';
+import { Start } from 'src/app/start.model';
 
 @Component({
   selector: 'app-start',
@@ -10,23 +12,23 @@ import { StartService } from '../service/start.service';
 export class StartComponent implements OnInit {
 
   
-  startData: any;
+  teamMembers: Start[] = [];
 
-  constructor(private startService: StartService) { }
+  constructor(private http: HttpClient, private startService: StartService) { }
+
 
   ngOnInit(): void {
-    this.startService.getStartData().subscribe(
-      (data) => {
-        this.startData = data;
+    this.startService.getTeamMembers().subscribe(
+      (data: any) => {
+        this.teamMembers = data;
       },
-      (error) => {
-        console.error('Greška prilikom dohvata podataka za start stranicu:', error);
+      (error: any) => {
+        console.error('Došlo je do greške:', error);
       }
     );
   }
-  }
 
-  // Dodajte dodatne metode i logiku prema potrebi
+  }
 
 
 

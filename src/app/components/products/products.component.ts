@@ -9,7 +9,6 @@ import { Product } from 'src/app/product.model';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  // Ovdje ćete pohraniti podatke o proizvodima
   
   products: Product[] = [];
 

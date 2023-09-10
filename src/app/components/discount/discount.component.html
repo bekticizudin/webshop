@@ -15,7 +15,6 @@
                   Cijena: {{ discount.price }} KM
                 </div>
                 <div class="new-price" *ngIf="discount.discountPercent > 0">Nova cijena: {{ discount.discountedPrice }} KM</div>
-              
               <div class="discount" *ngIf="discount.discountPercent > 0">
                 Popust: <span [ngStyle]="{'color': 'green'}">{{ discount.discountPercent }}%</span>
               </div>

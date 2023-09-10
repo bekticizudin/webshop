@@ -21,7 +21,7 @@
     display: block;
     padding: 20px;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto; 
     background-color: #f5f5f5;
     border-right: 1px solid #eee;
     }
@@ -35,7 +35,7 @@
     display: block;
     padding: 20px;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto; 
     background-color: #f5f5f5;
     border-left: 1px solid #eee;
     }
@@ -87,13 +87,11 @@
       margin: 0 auto;
     }
     
-    /* Stil za labelu */
     label {
       margin-bottom: 8px;
       font-weight: bold;
     }
     
-    /* Stil za input i textarea */
     input[type="text"],
     input[type="email"],
     textarea {
@@ -104,7 +102,7 @@
       font-size: 16px;
     }
     
-    /* Stil za button */
+
     button {
       background-color: #007bff;
       color: white;
@@ -115,7 +113,7 @@
       font-size: 18px;
     }
     
-    /* Stil za button na hover */
+
     button:hover {
       background-color: #0056b3;
     }
@@ -158,8 +156,8 @@
     }
 
     .small-image {
-      max-width: 400px; /* Adjust this value as needed */
-      max-height: 400px; /* Adjust this value as needed */
+      max-width: 400px;
+      max-height: 400px; 
     }
 
 .kontakt {
@@ -185,4 +183,28 @@
   height: auto;
   display: block;
   margin: auto;
+}
+
+footer {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0, 64, 113);
+  color: #fff; 
+  text-align: left; 
+  padding: 10px; 
+}
+.team {
+  font-family: "Helvetica", sans-serif;
+  font-size: 17px;
+}
+.sidebar-naslov {
+  background-color: #cbcbcf;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main {
+  flex: 2;
+  padding: 10px;
 }

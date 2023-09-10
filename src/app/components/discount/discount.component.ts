@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DiscountService } from '../service/discount.service';
 import { HttpClient } from '@angular/common/http';
+import { Discount } from 'src/app/discount.model';
 
 @Component({
   selector: 'app-discount',
@@ -9,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DiscountComponent implements OnInit{
 
-  discounts: any[] = [];
+  discounts: Discount[] = [];
   
   constructor(private discountService: DiscountService, private http: HttpClient) {}
 
