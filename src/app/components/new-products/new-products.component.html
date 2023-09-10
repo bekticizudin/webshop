@@ -1,0 +1,24 @@
+<div class="container">
+    <h4>Novi proizvodi</h4>
+    <div class="card-columns">
+      <div class="card" *ngFor="let newProduct of newProducts">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]="newProduct.imagePath" class="card-img-top small-image" alt="{{ newProduct.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ newProduct.name }}</h5>
+              <p class="card-text">{{ newProduct.description }}</p>
+              <p class="card-text">
+                <div class="old-price">
+                  Cijena: {{ newProduct.price }} KM
+                </div>
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

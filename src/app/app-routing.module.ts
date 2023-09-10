@@ -12,11 +12,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { 
-    path: 'products', 
+    path: 'proizvodi', 
     component: ProductsComponent,
     },
   { 
-    path: 'contact', 
+    path: 'kontakt', 
     component: ContactComponent,
     },
     { 

@@ -13,10 +13,10 @@
             <a class="nav-link" aria-current="page" href="#">Naslovna</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/products">Proizvodi</a>
+            <a class="nav-link active" href="/proizvodi">Proizvodi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Kontakt</a>
+            <a class="nav-link" href="/kontakt">Kontakt</a>
           </li>
         </ul>
       </div>
@@ -35,18 +35,15 @@
             <div class="card-body">
               <h5 class="card-title">{{ product.name }}</h5>
               <p class="card-text">{{ product.description }}</p>
-              <div class="old-price" [ngStyle]="{'text-decoration': product.discountPercent > 0 ? 'line-through' : 'none'}">
+              <div class="old-price">
                 Cijena: {{ product.price }} KM
               </div>
-              <div class="new-price" *ngIf="product.discountPercent > 0">Nova cijena: {{ product.discountedPrice }} KM</div>
-            
-            <div class="discount" *ngIf="product.discountPercent > 0">
-              Popust: <span [ngStyle]="{'color': 'green'}">{{ product.discountPercent }}%</span>
-            </div>
-          </div>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
-  
+    <footer>Dizajnirao: Izudin Bektić
+      2023. godina
+    </footer>

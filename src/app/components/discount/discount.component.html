@@ -1,0 +1,27 @@
+<div class="container">
+    <h4>Proizvodi na popustu</h4>
+    <div class="card-columns">
+      <div class="card" *ngFor="let discount of discounts">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]="discount.imagePath" class="card-img-top small-image" alt="{{ discount.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ discount.name }}</h5>
+              <p class="card-text">{{ discount.description }}</p>
+              <p class="card-text">
+                <div class="old-price" [ngStyle]="{'text-decoration': discount.discountPercent > 0 ? 'line-through' : 'none'}">
+                  Cijena: {{ discount.price }} KM
+                </div>
+                <div class="new-price" *ngIf="discount.discountPercent > 0">Nova cijena: {{ discount.discountedPrice }} KM</div>
+              
+              <div class="discount" *ngIf="discount.discountPercent > 0">
+                Popust: <span [ngStyle]="{'color': 'green'}">{{ discount.discountPercent }}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

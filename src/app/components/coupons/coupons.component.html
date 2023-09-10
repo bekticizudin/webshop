@@ -1,0 +1,19 @@
+<div class="container">
+    <h4>Kuponi</h4>
+    <div class="card-columns">
+      <div class="card" *ngFor="let coupon of coupons">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]="coupon.imagePath" class="card-img-top small-image" alt="{{ coupon.code }}" *ngIf="coupon.imagePath">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ coupon.code }}</h5>
+              <p class="card-text">{{ coupon.description }}</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
